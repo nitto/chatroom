@@ -1,0 +1,380 @@
+.oneColLiqCtrHdr #container {
+	width: 80%;
+	margin: 0 auto; /* 自动边距（与宽度一起）会将页面居中 */
+	border: 1px solid #000000;
+	text-align: left; /* 这将覆盖 body 元素上的“text-align: center”。 */
+	background-color: #87CEFA;
+}
+.oneColLiqCtrHdr #header {/*群名DIV*/
+	font-size: 26px;
+	background-color: #87CEFA;
+	background-image: url(../images/1/101.gif);
+	background-repeat: no-repeat;
+	padding-right: 10px;
+	padding-left: 60px;
+	font-weight: bold;
+	background-position: left top;
+	margin-left: 20px;
+	margin-top: 10px;
+	height: 36px;
+	border-top-width: 6px;
+}
+.oneColLiqCtrHdr #headright {/*收藏本站和修改资料的DIV*/
+	float: right;
+}
+.oneColLiqCtrHdr #header2 {/*群名下面的功能图标DIV，以后可以放广告图标*/
+	background-color: #87CEFA;
+	padding-left: 20px;
+	height: 40px;
+}
+.oneColLiqCtrHdr #welcome {/*欢迎用户的DIV*/
+	float: right;
+	font-size: 12px;
+	color: #000000;
+	padding-top: 5px;
+	padding-right: 15px;
+}
+.oneColLiqCtrHdr #mainContent {/*主要功能区DIV*/
+	background: #F1F1F1;
+	height: 670px;
+}
+.oneColLiqCtrHdr #leftwin {/*主要功能区左部区DIV*/
+	float: left;
+	width: 74%;
+}
+.oneColLiqCtrHdr #leftwin1 {/*用户提示DIV*/
+	padding-left: 20px;
+	background-color: #F1F1F1;
+	background-image: url(../images/1/40.gif);
+	background-repeat: no-repeat;
+	height: 24px;
+	font-size: 12px;
+}
+.oneColLiqCtrHdr #flush {/*设置消息提醒的DIV*/
+	float: right;
+	width: 18px;
+	font-size: 12px;
+	height: 18px;
+	color: #FF7FFF;
+	border: thin dotted #FF5FFF;
+	overflow: hidden;
+}
+.oneColLiqCtrHdr #content {/*聊天窗口内容显示DIV*/
+	height: 460px;
+	background-color: #FFFFFF;	
+	padding-left: 20px;
+	overflow: auto;
+}
+.contentfont1 {/*聊天窗口内每次发言者的字体设置DIV*/
+	font-size: 12px;
+	line-height: 28px;
+	color: #008080;
+	position: relative;
+	top: 3px;
+}
+.oneColLiqCtrHdr #leftwin3 {/*聊天功能图标DIV*/
+	height: 25px;
+	background-color: #F1F1F1;
+	padding-left: 20px;
+}
+.oneColLiqCtrHdr #leftwin35 {/*聊天记录显示区主框架DIV*/
+	display: none;
+	position: absolute;
+	top: 95px;
+	left: 600px;
+	border: thin solid #A0A0A4;
+	cursor: move;
+}
+.oneColLiqCtrHdr #leftwin351 {/*聊天记录内容显示区DIV*/
+	height: 500px;
+	width: 510px;
+	overflow: auto;
+	padding-top: 10px;
+	padding-left: 20px;
+	background-color: #F5F5F5;
+}
+.oneColLiqCtrHdr #datehead {/*聊天记录区表头DIV*/
+	font-size: 16px;
+	color: #00F;
+	line-height: 24px;
+}
+.oneColLiqCtrHdr #leftwin352 {/*聊天记录时间选择区DIV*/
+	background-color: #C7EAEE;
+	text-align: center;
+	height: 30px;
+	padding-top: 5px;
+}
+.flush {/*聊天记录区表头内提示SPAN*/
+	float: right;
+}
+.oneColLiqCtrHdr #content1 {/*聊天输入DIV*/
+	height: 140px;
+	width: 98%;
+	padding-left: 10px;
+	overflow: auto;
+}
+.oneColLiqCtrHdr #leftwin5 {/*提交和重置按钮DIV*/
+	text-align: right;
+	background-color: #F1F1F1;
+}
+.oneColLiqCtrHdr #rigthwin {/*主功能区右部区DIV*/
+	float: right;
+	width: 24%;
+	margin-right: 5px;
+	border: thin solid #BBB;
+}
+.oneColLiqCtrHdr #rightwin1 {
+	background-color: #F1F1F1;/*群动态DIV*/
+	padding-left: 5px;
+	font-size: 12px;
+	line-height: 16px;
+}
+.oneColLiqCtrHdr #rightwin2 {/*群动态按钮组DIV*/
+	height: 21px;
+	text-align: center;
+	background-color: #F1F1F1;
+}
+.oneColLiqCtrHdr #rigthwin3 {/*群动态广告区DIV*/
+	height: 120px;
+	background-color: #FFFFFF;
+}
+.oneColLiqCtrHdr #r31 {/*群动态广告1DIV*/
+	height: 100px;
+	background-position: center center;
+	background-image: url(../images/1/r31.gif);
+	background-repeat: no-repeat;
+}
+.oneColLiqCtrHdr #r32 {/*群动态广告2DIV*/
+	height: 100px;
+	background-position: center center;
+	display: none;
+	background-image: url(../images/1/r32.gif);
+	background-repeat: no-repeat;
+}
+.oneColLiqCtrHdr #r33 {/*群动态广告3DIV*/
+	height: 100px;
+	background-position: center center;
+	display: none;
+	background-image: url(../images/1/r33.gif);
+	background-repeat: no-repeat;
+}
+.oneColLiqCtrHdr #r34 {/*群动态广告4DIV*/
+	height: 100px;
+	background-position: center center;
+	display: none;
+	background-image: url(../images/1/r34.gif);
+	background-repeat: no-repeat;
+}
+.oneColLiqCtrHdr #online {/*群成员数量和用户列表的DIV*/
+	height: 515px;
+	background-color: #FFFFFF;
+	border: thin solid #BBB;
+}
+.totalperson {/*群成员数量的SPAN*/
+	color: #006;
+	background-color: #F1F1F1;
+	font-size: 12px;
+	line-height: 16px;
+	padding-left: 5px;
+}
+.oneColLiqCtrHdr #online2 {/*所有用户列表DIV*/
+	overflow: auto;
+}
+.oncolor {/*在线成员字体颜色SPAN*/
+	font-size: 12px;
+	line-height: 19px;
+	color: #2A5F00;
+}
+.oncolor:hover {/*所有需要动态提示的按钮的CLASS*/
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+.upcolor {/*非在线成员字体颜色SPAN*/
+	color: #A0A0A4;
+	font-size: 12px;
+	line-height: 19px;
+}
+.oneColLiqCtrHdr #footer {/*所属公司区DIV*/
+	font-size: 12px;
+	text-align: center;
+	height: 100px;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+	background-color: #F1F1F1;
+	background-image: url(../images/40.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+} 
+.oneColLiqCtrHdr #footer p {
+	margin: 0; /* 将脚注中第一个元素的边距设置为零将避免出现可能的边距重叠（即 div 之间出现的空白）*/
+	padding: 10px 0; /* 就像边距会产生空白一样，此元素上的填充也将产生空白，但不会出现边距重叠问题 */
+}
+body {
+	font: 100% 宋体, 新宋体;
+	background: #666666;
+	margin: 0; /* 最好将 body 元素的边距和填充设置为 0 以覆盖不同的浏览器默认值 */
+	padding: 0;
+	text-align: center; /* 在 IE 5* 浏览器中，这会将容器居中。文本随后将在 #container 选择器中设置为默认左对齐 */
+	color: #000000;
+}
+.rwi:hover {/*所有需要动态提示的按钮的CLASS*/
+	position: relative;
+	top: 1px;
+	left: 1px;
+}
+
+.singlechat {/*私聊主框架DIV的CLASS*/
+	display: none;
+	position: absolute;
+	width: 520px;
+	top: 1px;
+	left: 600px;
+	border: thin solid #A0A0A4;
+	background-color: #C7EAEE;
+	font-family: "宋体", "新宋体";
+}
+.chat1 {/*私聊表头DIV的CLASS*/
+	padding-top: 5px;
+	padding-left: 20px;
+	background-color: #C7EAEE;
+	font-size: 16px;
+	color: #00F;
+	line-height: 24px;
+	height: 24px;
+}
+.chat2 {/*私聊内容主框架DIV的CLASS*/
+	height: 420px;
+	width: 510px;
+	background-color: #FFFBF0;
+}
+.chat21 {/*私聊内容显示区DIV的CLASS*/
+	width: 510px;
+	overflow: auto;
+	padding-top: 2px;
+	padding-left: 10px;
+	background-color: #FFFBF0;
+	height: 420px;
+}
+.chat22 {/*字体*/
+	display: none;
+	background-color: #C7EAEE;
+	bottom: 0px;
+	position: absolute;
+	top: 426px;
+	height: 24px;
+	width: 510px;
+}
+.chat23 {/*颜色*/
+	display: none;
+	position: absolute;
+	top: 327px;
+	left: 350px;
+	background-color: #C7EAEE;
+}
+
+.chat24 {/*表情*/
+	display: none;
+	background-color: #C7EAEE;
+	position: absolute;
+	top: 257px;
+}
+.chat25 {/*产品规格*/
+	display: none;
+	background-color: #C7EAEE;
+	position: absolute;
+	top: 365px;
+	text-align: center;
+	line-height: 24px;
+	font-size: 12px;
+	width: 510px;
+	height: 80px;
+	padding-top: 6px;
+}
+.chat26 {/*聊天记录主框架*/
+	top: 2px;
+	display: none;
+	position: absolute;
+	height: 428px;
+	width: 500px;
+	background-color: #C7EAEE;
+	left: 30px;
+}
+.chat261 {/*聊天记录次主框架*/
+	background-color: #C7EAEE;
+}
+.chat2611 {/*聊天记录表头*/
+	padding-top: 5px;
+	padding-left: 20px;
+	background-color: #C7EAEE;
+	font-size: 16px;
+	color: #00F;
+	line-height: 24px;
+	display: block;
+}
+.chat2612 {/*聊天记录显示区*/
+	height: 356px;
+	width: 480px;
+	overflow: auto;
+	padding-top: 2px;
+	padding-left: 10px;
+	background-color: #F5F5F5;
+}
+.chat262 {/*聊天记录时间选择区*/
+	background-color: #C7EAEE;
+	text-align: center;
+	height: 24px;
+	padding-top: 5px;
+}
+
+
+.chat3 {/*私聊功能区DIV的CLASS*/
+	height: 28px;
+	width: 500px;
+	padding-left: 20px;
+	background-color: #C7EAEE;
+}
+.chat4 {/*私聊输入区DIV的CLASS*/
+	height: 80px;
+	width: 510px;
+	overflow: auto;
+	padding-top: 5px;
+	padding-left: 10px;
+	background-color: #FFA;
+}
+.chat5 {/*私聊发送按钮区DIV的CLASS*/
+	background-color: #C7EAEE;
+	text-align: right;
+	height: 24px;
+	padding-top: 5px;
+}
+.oneColLiqCtrHdr #content11 {/*登录页面的登录框的DIV*/
+	height: 140px;
+	background-color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 7px;
+}
+.oneColLiqCtrHdr #alert {/*登录页面的警示DIV*/
+	height: 30px;
+	background-color: #FFFFFF;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 7px;
+}
+.btn_link {/*登录页面的新用户注册和忘记密码的CLASS*/
+	border-top-color: #FFF;
+	border-right-color: #FFF;
+	border-bottom-color: #FFF;
+	border-left-color: #FFF;
+	position: relative;
+	top: 9px;
+}
+.btn_log {/*登录页面的登录和重置的CLASS*/
+	margin-top: 13px;
+}
+.oneColLiqCtrHdr #myTabs {
+	list-style-type: none;
+}

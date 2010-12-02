@@ -1,0 +1,16 @@
+td {  font-family: "宋体"; font-size: 12px; line-height: 25px}
+.input1 {  font-family: "宋体"; font-size: 12px; line-height: 20px; color: #000000; background-color: #D7F2F2; border-style: inset; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.button1 {  font-family: "宋体"; font-size: 12px; line-height: 18px; background-color: #77BBBB; border-style: outset; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.button2 { font-family: "宋体"; font-size: 12px; line-height: 18px; background-color: #FFCC00; border-style: outset; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px }
+.button3 {  font-family: "宋体"; line-height: 18px; background-color: #FFFF00; border-style: outset; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px}
+.touming {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	line-height: 18px;
+	color: #0000FF;
+	background-color: #FFFFFF;
+	border: none;
+	background-position: top;
+
+}

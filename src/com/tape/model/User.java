@@ -40,6 +40,26 @@ public class User {
 	
 	private boolean numb;
 	
+	private String checkCode;
+	private int isChecked; 
+	
+
+	public String getCheckCode() {
+		return checkCode;
+	}
+
+	public void setCheckCode(String checkCode) {
+		this.checkCode = checkCode;
+	}
+
+	public int getIsChecked() {
+		return isChecked;
+	}
+
+	public void setIsChecked(int isChecked) {
+		this.isChecked = isChecked;
+	}
+
 	public int getUserNumber() {
 		return userNumber;
 	}

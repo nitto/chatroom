@@ -15,6 +15,8 @@ import javax.servlet.http.HttpSession;
 import com.tape.model.DbBean;
 import com.tape.model.User;
 import com.tape.model.UserInfo;
+import com.tape.util.SendMail;
+import com.tape.util.UuidGet;
 
 public class RegisterServlet extends javax.servlet.http.HttpServlet implements
 		javax.servlet.Servlet {
@@ -224,6 +226,7 @@ public class RegisterServlet extends javax.servlet.http.HttpServlet implements
 		        }
 		    }
 		    int strClass=0;//非管理员
+		    UuidGet ug = new UuidGet();
 			user.setUserNumber(sNumber);
 			user.setUserName(strUserName);
 			user.setPhoto(strPhoto);
@@ -237,11 +240,15 @@ public class RegisterServlet extends javax.servlet.http.HttpServlet implements
 			user.setProtectQuestionc(strQuestionc);
 			user.setEmail(strEmail);
 			user.setMclass(strClass);
+			user.setIsChecked(0);
+			user.setCheckCode(ug.getUUID());
 			DbBean dbBean=new DbBean();
 			dbBean.insertUser(user);
 			int i=user.getNuma();
 			if (i == 1) {
+				
 					// 注册成功
+					SendMail.sendMail("smtp.gmail.com", "465", true, "xdaxt2009", "axt!2009", "xdaxt2009@gmail.com", user.getEmail(), "html", user.getCheckCode());
 					request.setAttribute("sNumber", sNumber);
 					HttpSession session = request.getSession();
 					UserInfo usere=UserInfo.getInstance();

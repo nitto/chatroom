@@ -1,10 +1,13 @@
 package com.tape.db;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.sql.DataSource;
 
 import org.apache.log4j.Logger;
 
@@ -20,14 +23,8 @@ public class DBUtil {
 
 	/** 声明日志对象 */
 	private static final Logger log = Logger.getLogger(DBUtil.class);
-	/** 数据库URL地址 */
-	private String url = "jdbc:mysql://localhost/chatroom";
-	/** 驱动程序名 */
-	private String driver = "com.mysql.jdbc.Driver";
-	/** 数据库名称 */
-	private String username = "root";
-	/** 数据库密码 */
-	private String password = "adminfzt";
+	
+	private DataSource dataSource;
 	/** 建立数据库连接 */
 	private Connection conn = null;
 	/** statement用来执行SQL语句 */
@@ -38,15 +35,11 @@ public class DBUtil {
 	public DBUtil() {
 		try {
 			
-			// 加载驱动程序
-			Class.forName(driver); 
-			conn = DriverManager.getConnection(url,username,password);
-
-			if (!conn.isClosed())
-				//验证是否连接成功
-				Debug.println("Succeeded connecting to the Database!"); 
-				log.info("Succeeded connecting to the Database!");
-
+			Context initContext = new InitialContext();
+            Context envContext = (Context)initContext.lookup("java:/comp/env");
+            dataSource = (DataSource) envContext.lookup("jdbc/chatroom");
+            conn = dataSource.getConnection();
+            
 		} catch (Exception e) {
 			Debug.println("Sorry,can`t find the Driver!");
 			log.error("Sorry,can`t find the Driver!" + e.getMessage());

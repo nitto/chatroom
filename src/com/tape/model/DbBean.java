@@ -26,7 +26,7 @@ public class DbBean {
         PreparedStatement statement = null;
         try {
             conn = dataSource.getConnection();
-            statement = conn.prepareStatement("INSERT INTO user VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            statement = conn.prepareStatement("INSERT INTO user VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
             statement.setInt(1, user.getUserNumber());
             statement.setString(2, user.getUserName());
             statement.setString(3, user.getPhoto());
@@ -40,6 +40,8 @@ public class DbBean {
             statement.setString(11, user.getProtectQuestionc());
             statement.setString(12, user.getEmail());
             statement.setInt(13, user.getMclass());
+            statement.setInt(14, user.getIsChecked());
+            statement.setString(15, user.getCheckCode());
             int i=statement.executeUpdate();
             user.setNuma(i);
         } catch (SQLException ex) {
@@ -218,7 +220,7 @@ public class DbBean {
         try {
             conn = dataSource.getConnection();
             statement = conn.createStatement();
-            result = statement.executeQuery("SELECT * FROM user WHERE UserNumber='"+userNumer+"'");//SELECT * FROM user
+            result = statement.executeQuery("SELECT * FROM user WHERE isChecked=1 and UserNumber='"+userNumer+"'");//SELECT * FROM user
             //users = new ArrayList<User>();
             while (result.next()) {
                 User user = new User();
